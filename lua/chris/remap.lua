@@ -2,6 +2,10 @@
 vim.g.mapleader = " "
 
 
+vim.keymap.set("n", "<leader>tb", function()
+  vim.cmd("tabnew")
+end)
+
 vim.keymap.set("n", "<leader>tl", function()
   vim.cmd("tabnew | terminal")
 end)
