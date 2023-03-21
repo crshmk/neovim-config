@@ -115,6 +115,11 @@ _G.packer_plugins = {
     path = "/Users/pt/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
+  ["vim-gitgutter"] = {
+    loaded = true,
+    path = "/Users/pt/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
+    url = "https://github.com/airblade/vim-gitgutter"
+  },
   ["vim-vinegar"] = {
     loaded = true,
     path = "/Users/pt/.local/share/nvim/site/pack/packer/start/vim-vinegar",
