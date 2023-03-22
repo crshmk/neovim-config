@@ -24,11 +24,12 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- don't put highligted section in buffer when pasting 
+-- paste without putting highlighted section in register 
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
--- don't delete to buffer; delete to void register
+-- delete without putting in register
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({"n", "v"}, "<leader>x", [["_x]])
 
 -- yank to system clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
