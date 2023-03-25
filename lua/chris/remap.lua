@@ -1,14 +1,6 @@
 
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>tb", function()
-  vim.cmd("tabnew")
-end)
-
-vim.keymap.set("n", "<leader>tl", function()
-  vim.cmd("tabnew | terminal")
-end)
-
 -- move an dynamically indent multiple highlighted lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -40,6 +32,9 @@ vim.keymap.set("n", "Q", "<nop>")
 
 -- replace all instances of word in current cursor location 
 vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+vim.keymap.set("n", "<leader>tl", "<cmd>sp | resize 10 | term<CR>")
+
 -- command example vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- reload config file;:another command example
