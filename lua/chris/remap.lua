@@ -35,8 +35,12 @@ vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 vim.keymap.set("n", "<leader>tl", "<cmd>sp | resize 10 | term<CR>")
 
--- command example vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+-- write 
+vim.keymap.set("n", "<leader>s", ":update<CR>")
+vim.keymap.set("i", "<C-S>", "<Esc>:update<CR>")
 
+-- command example vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+ 
 -- reload config file;:another command example
 -- vim.keymap.set("n", "<leader><leader>", function()
   --  vim.cmd("so")
