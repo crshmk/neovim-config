@@ -26,6 +26,7 @@ vim.keymap.set({"n", "v"}, "<leader>x", [["_x]])
 -- yank to system clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set("c", "<leader>y","%y+<CR>" )
 
 -- disable Q
 vim.keymap.set("n", "Q", "<nop>")
