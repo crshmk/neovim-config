@@ -2,14 +2,17 @@
 
 ---
 
-### Mac setup
-- `brew install neovim`
-- install [iterm2](https://iterm2.com/); use for everything relevant below
+### Setup
+- install neovim v0.9
+  - [Linux](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-download)
+  - Mac 
+    - `brew install neovim`
+    - install [iterm2](https://iterm2.com/); use for everything relevant below
 - clone this repo as `/Users/username/.config/nvim`
 - install font/icons
   - [download](https://www.nerdfonts.com/font-downloads) a nerd font collection to `/Users/username/.local/share/fonts/fontname`, e.g. `/Users/chris/.local/share/fonts/Hack`
-  - open each font in the collection with font book and install 
-  - open `iterm2` preferences and select the font group (e.g. Hack mono) from profiles -> Default -> text
+  - Mac - open each font in the collection with font book and install 
+  - open iterm2 (Mac) or terminal (Linux) preferences and select the font group (e.g. Hack mono) 
 - install package manager and dependencies 
   - [clone to install packer](https://github.com/wbthomason/packer.nvim#quickstart)
   - rename `after/plugin` folder to anything else so that neovim doesn't break on init
@@ -18,4 +21,5 @@
     - `PackerSync`
   - fix `after/plugin` folder name 
 - `nvim .`
+
 
